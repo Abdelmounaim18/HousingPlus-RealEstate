@@ -1,0 +1,69 @@
+/* semantic color variables for this project */
+:root {
+    --primary-color: #2e5ea0; /* Diep blauw als primaire kleur */
+    --secondary-color: #4a4b4c; /* Donkergrijs */
+    --tertiary-color-1: #e8e8e8; /* Lichtgrijs */
+    --tertiary-color-2: #c3c3c3; /* Middelgrijs */
+    --background-color: #f6f6f6; /* Bijna wit als achtergrondkleur */
+    --text-primary: #000000; /* Zwart voor primaire tekst */
+    --text-secondary: #4a4b4c; /* Donkergrijs voor secundaire tekst */
+    --text-link: #067bc2; /* Stijlvol blauw voor hyperlinks */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text-primary);
+    background: var(--background-color);
+    line-height: 1.6;
+    font-family: Monsterrat, "Open Sans", sans-serif;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+.router-link-exact-active {
+    font-weight: bold;
+    color: var(--text-primary) !important;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .content {
+        margin: 20px;
+        padding-bottom: 10%;
+    }
+}
